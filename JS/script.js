@@ -12,8 +12,11 @@ btnGenera.addEventListener('click', function(){
   ticketSection.classList.remove('d-none');
   let customPrice = inputKm.value * 0.21; 
 
-  if (isNaN(inputKm.value)){
-    customPrice = '! ERRORE ! Si prega di inserire età e km in formato numerico.'
+  if (isNaN(inputKm.value)){ 
+    document.querySelector('table').classList.add('d-none');
+    document.querySelector('.error-message').classList.remove('d-none');
+  }else if(inputKm.value == ''){
+    customPrice = 'Inserire km da percorrere!'
   }else if(age.value == 2){
     customPrice = (customPrice - (customPrice * 0.2)).toFixed(2) + '€';
     document.querySelector('.offerta').innerHTML = 'Offerta YOUNG';
@@ -34,8 +37,5 @@ btnGenera.addEventListener('click', function(){
 
 btnReset.addEventListener('click', function(){
   ticketSection.classList.add('d-none');
-  inputName.value = ''; 
-  inputKm.value = '';
-  age.value = 'reset';
-})
+});
 
