@@ -9,21 +9,81 @@
   <!-- /bootstrap -->
   <title>Document</title>
 </head>
-<body>
-  <div class="bg-black container my-5">
-    <input id="nome" class="form-control" type="text" placeholder="Nome">
+<body class="bg-black">
+  <div class="container my-5">
+    <div class="card">
+      <div class="card-body">
+        <div class="d-flex justify-content-center"> 
+          
+          <div class="d-inline mx-5 ">
+            <h4>Nome e cognome</h4>
+            <input id="input-name" class=" d-inline form-control" type="text" placeholder="Nome">
+          </div>
 
-    <input id="km" class="form-control" type="text" placeholder="Km da percorrere">
+          <div class="d-inline mx-5 ">
+            <h4>Km da percorrere</h4>
+            <input id="input-km" class=" d-inline form-control" type="text" placeholder="Km da percorrere">
+          </div>
 
-    <select id="age" class="form-select" aria-label="Default select example">
-      <option selected>Seleziona la tua fascia di età:</option>
-      <option value="1">Maggiorenne</option>
-      <option value="2">Minorenne</option>
-      <option value="3">Over 65</option>
-    </select>
+          <div class="d-inline mx-5 ">
+            <h4>Fascia d'età</h4>
+          <select id="age" class=" d-inline form-select" aria-label="Default select example">
+            <option selected>Seleziona la tua fascia di età:</option>
+            <option value="1">Maggiorenne</option>
+            <option value="2">Minorenne</option>
+            <option value="3">Over 65</option>
+          </select>
+          </div>
+          
+          
 
-    <button type="button" id="btn-genera" class="btn btn-primary">GENERA</button>
+          
+      
+        
+        </div>
+      </div>
 
+      <div class="d-flex justify-content-center">
+        <button type="button" id="btn-genera" class=" btn btn-primary">GENERA</button> 
+      </div>
+    </div>
+
+  </div>
+
+  <div id="ticket-section" class="d-none container text-light">
+    <h1>IL TUO BIGLIETTO</h1>
+    <div class="card">
+      <div class="card-body">
+        <h2>DETTAGLI PASSEGGERO</h2>
+        <div class="innercard d-flex">
+          <div class="bg-danger flex-fill h-100 w-25"><img src="img/tren.jpg" class="w-100" alt=""></div>
+
+          <table class="table ms-4">
+            <thead>
+              <tr>
+                <th scope="col">Offerta</th>
+                <th scope="col">Carrozza</th>
+                <th scope="col">Codice CP</th>
+                <th scope="col">Costo biglietto</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+            
+            </tbody>
+          </table>
+        </div>
+
+
+
+       
+      </div>
+    </div>
   </div>
 
   
@@ -32,3 +92,16 @@
   <script src="JS/script.js"></script>
 </body>
 </html>
+
+ <!--      <input id="input-name" class="form-control" type="text" placeholder="Nome">
+
+    <input id="input-km" class="form-control" type="text" placeholder="Km da percorrere">
+
+    <select id="age" class="form-select" aria-label="Default select example">
+      <option selected>Seleziona la tua fascia di età:</option>
+      <option value="1">Maggiorenne</option>
+      <option value="2">Minorenne</option>
+      <option value="3">Over 65</option>
+    </select>
+
+    <button type="button" id="btn-genera" class="btn btn-primary">GENERA</button> -->
