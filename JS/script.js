@@ -4,7 +4,7 @@ const btnGenera = document.getElementById('btn-genera');
 let age= document.getElementById('age');
 const cpCode = Math.floor(Math.random() * (100000 - 1) + 1);
 const carriageNum = Math.floor(Math.random() * (99 - 1) + 1);
-
+const btnReset = document.getElementById('btn-reset');
 const ticketSection = document.querySelector('#ticket-section');
 
 btnGenera.addEventListener('click', function(){
@@ -32,15 +32,10 @@ btnGenera.addEventListener('click', function(){
   document.querySelector('.carrozza').innerHTML = carriageNum;
 })
 
+btnReset.addEventListener('click', function(){
+  ticketSection.classList.add('d-none');
+  inputName.value = ''; 
+  inputKm.value = '';
+  age.value = 'reset';
+})
 
-
-/* 
-if (isNaN(numKm) || isNaN(age)){
-  customPrice = '! ERRORE ! Si prega di inserire età e km in formato numerico.'
-}else if(age < 18){
-  customPrice = (customPrice - (customPrice * 0.2)).toFixed(2) + '€';
-}else if(age > 65){
-  customPrice = (customPrice - (customPrice * 0.4)).toFixed(2) + '€';
-}else{
-  customPrice = customPrice.toFixed(2) + '€';
-}; */

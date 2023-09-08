@@ -12,6 +12,7 @@
 <body class="bg-danger">
   <div class="container my-5">
     <div class="card">
+      <form action="">
       <div class="card-body text-center">
         <h1 class="mb-5">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
         <div class="d-flex justify-content-center"> 
@@ -29,26 +30,23 @@
           <div class="d-inline mx-5">
             <h4>Fascia d'età</h4>
           <select id="age" class=" d-inline form-select" aria-label="Default select example">
-            <option selected>Seleziona la tua fascia di età:</option>
+            <option value="reset" selected>Seleziona la tua fascia di età:</option>
             <option value="1">Maggiorenne</option>
             <option value="2">Minorenne</option>
             <option value="3">Over 65</option>
           </select>
-          </div>
-          
-          
-
-          
-      
-        
+ 
         </div>
       </div>
 
       <div class="d-flex justify-content-center mb-5 mt-4">
-        <button type="button" id="btn-genera" class=" btn btn-primary">GENERA</button> 
-      </div>
-    </div>
+        <button type="button" id="btn-genera" class=" btn btn-primary mx-5">GENERA</button> 
 
+        <button type="button" id="btn-reset" class=" btn btn-danger mx-5">ANNULLA</button> 
+      </div>
+    </form>
+    </div>
+    
   </div>
 
   <div id="ticket-section" class="d-none container text-light">
@@ -94,15 +92,3 @@
 </body>
 </html>
 
- <!--      <input id="input-name" class="form-control" type="text" placeholder="Nome">
-
-    <input id="input-km" class="form-control" type="text" placeholder="Km da percorrere">
-
-    <select id="age" class="form-select" aria-label="Default select example">
-      <option selected>Seleziona la tua fascia di età:</option>
-      <option value="1">Maggiorenne</option>
-      <option value="2">Minorenne</option>
-      <option value="3">Over 65</option>
-    </select>
-
-    <button type="button" id="btn-genera" class="btn btn-primary">GENERA</button> -->
